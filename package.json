@@ -1,0 +1,17 @@
+{
+  "name": "render-ccs",
+  "version": "0.0.0",
+  "description": "The ccs framework for render",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "render-ccs"
+  ],
+  "author": "mutian-xiangcai",
+  "license": "MIT",
+  "dependencies": {
+    "render-refer": "^0.0.8"
+  }
+}
