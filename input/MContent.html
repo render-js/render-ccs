@@ -1,9 +1,22 @@
 <template>
   <view>
-    <Test method="test" data="name"></Test>
     <button type="button" @on:click="show">click me</button>
+    <div>
+      <input id="haode" type="text" @model="haode">
+    </div>
+    <h1 @txt="haode"></h1>
+    <div @on:input="hao" id="kk" contenteditable="true" to="kk"></div>
+    <div @ref="kk"></div>
+    <div></div>
   </view>
   <style theme="default">
+    button[cpn=MContent] {
+      background-color: red;
+    }
 
+    #kk[cpn=MContent]{
+      height: 100px;
+      border: solid red 1px;
+    }
   </style>
 </template>

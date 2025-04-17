@@ -5,13 +5,15 @@ export default new Component({
     name: "MMenuItem",
     template: template,
     props:["label","url"],
-    mode: "insert",
+    config: {
+        boxMode: false
+    },
     data:{
         label:""
     },
     methods:{
         redirect(){
-            appSite.redirect(this.$props.get("url"),{})
+            this.$get("test").redirect(this.$props.get("url"),{})
         }
     },
     beforeRender(){
